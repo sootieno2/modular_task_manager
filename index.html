@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modular Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Task Manager</h1>
+
+    <form id="task-form">
+      <input id="new-task" type="text" placeholder="Add new task..." required />
+      <input id="due-date" type="date" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <input id="search" type="text" placeholder="Search tasks..." />
+
+    <ul id="task-list"></ul>
+    <p id="count"></p>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+
+</html>
